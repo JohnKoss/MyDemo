@@ -5,5 +5,5 @@ Resources:
       Properties:
         TaskDefinition: "arn:aws:ecs:us-east-1:748939641058:task-definition/myrepo-task:24"
         LoadBalancerInfo:
-          ContainerName: "myrepo"
+          ContainerName: "myrepo-container"
           ContainerPort: 80
