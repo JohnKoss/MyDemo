@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:748939641058:task-definition/myrepo-task:24"
+        TaskDefinition: "arn:aws:ecs:us-east-1:748939641058:task-definition/myrepo-task"
         LoadBalancerInfo:
           ContainerName: "myrepo-container"
           ContainerPort: 80

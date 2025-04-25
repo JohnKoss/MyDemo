@@ -1,5 +1,5 @@
 # Use a lightweight Python image. Pull from the public ECR registry because Docker Hub is rate-limited.
-FROM public.ecr.aws/docker/library/python:3.11-slim
+FROM public.ecr.aws/docker/library/python:3.14-rc-slim@sha256:a4722702deceb57f9e99a23582857a7723598c6e2998dfa6e768d8ca9da53e77
 
 # Set working directory
 WORKDIR /app
