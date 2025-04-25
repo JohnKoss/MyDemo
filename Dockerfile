@@ -1,4 +1,4 @@
-# Use a lightweight Python image
+# Use a lightweight Python image. Pull from the public ECR registry because Docker Hub is rate-limited.
 FROM public.ecr.aws/docker/library/python:3.11-slim
 
 # Set working directory
