@@ -1,10 +1,10 @@
 {
-    "family": "myrepo-task",
+    "family": "mydemo-task",
     "executionRoleArn": "arn:aws:iam::748939641058:role/service-role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
       {
-        "name": "myrepo-container",
+        "name": "mydemo-container",
         "image": "<IMAGE1_NAME>",
         "essential": true,
         "portMappings": [

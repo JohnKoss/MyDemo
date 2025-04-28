@@ -7,12 +7,12 @@ phases:
       - echo "Listing source contents:"
       - ls -R
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com
-      - IMAGE_URI=$AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/myrepo-container:latest
+      - IMAGE_URI=$AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/mydemo-container:latest
   build:
     commands:
       - echo Building Docker image...
-      - docker build -t myrepo-container .
-      - docker tag myrepo-container:latest $IMAGE_URI
+      - docker build -t mydemo-container .
+      - docker tag mydemo-container:latest $IMAGE_URI
   post_build:
     commands:
       - echo Pushing image to ECR...
